@@ -134,6 +134,7 @@ a:hover {
 
 .section-footer .map {
     float: left;
+    margin-top: 160px;
     width: 50%;
 }
 
@@ -160,12 +161,12 @@ a:hover {
 .section-footer .about {
     float: right;
     width: 50%;
-    margin-top: 60px;
     padding: 10
 }
 
 .section-footer .about h4 {
     margin-top: 12px;
+    margin-bottom: 30px;
     font-size: 1.4em;
     color: white;
     font-weight: bold;
@@ -175,6 +176,21 @@ a:hover {
     color: #fff;
 }
 
+.section-footer .about p a img {
+    height: 84px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+.section-footer .about p a img.o {
+    width: 84px;
+}
+.section-footer .about p a img.p {
+    width: 180px;
+}
+.section-footer .about p a img.a {
+    width: 130px;
+
+}
 .section-copyright {
     background-color: #222;
     color: #fff;
@@ -194,11 +210,72 @@ a:hover {
         float: none;
         margin: 0 auto;
     }
+    .section-footer .about {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:710px) {
-	.section-footer .map img {
-		width: 100%;
-	}
+    .section-footer .map {
+        width: 100%;
+    }
+    .section-footer .map img {
+        width: 100%;
+    }
+    .section-intro .item {
+        margin: 0 auto;
+    }
+    .section-intro .item img{
+       left: 0%
+    }
+    .section-intro .item h3 {
+        position: none;
+        left: none;
+    }
 
+}
+@media screen and (max-width:420px) {
+    .section-slider .logo span {
+        font-size: 0.6em;
+    }
+    .section-intro .item img{
+       left: -30%
+    }
+    .section-intro .item h3 {
+        position: absolute;
+        left: 39%
+    }
+    .section-slider .time-addr {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:380px) {
+    .section-slider .logo span {
+        font-size: 0.6em;
+    }
+    .section-intro .item img{
+       left: -40%
+    }
+    .section-intro .item h3 {
+        position: absolute;
+        left: 38%
+    }
+    .section-slider .time-addr {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:330px) {
+    .section-slider .logo span {
+        font-size: 0.6em;
+    }
+    .section-intro .item img{
+       left: -50%
+    }
+    .section-intro .item h3 {
+        position: absolute;
+        left: 40%
+    }
+    .section-slider .time-addr {
+        font-size: 1.2em;
+    }
 }

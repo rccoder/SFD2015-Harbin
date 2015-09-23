@@ -4,11 +4,19 @@ $(function() {
     function change(bgHeight, bgWidth) {
         $(".section-slider").css("height", bgHeight);
         $(".bg").css('height', bgHeight);
-        $(".section-slider .logo").css("margin-top", bgHeight / 2.5);
-        if(bgWidth <= 710) {
+
+        if(bgWidth <= 716) {
+            $(".section-slider .logo").css("margin-top", bgHeight / 3.5);
         	$(".section-slider .time-addr").css("margin-top", 20);
+            $(".section-slider .time-addr").css("margin-left", 150);
+        } else if(bgWidth <= 990) {
+            $(".section-slider .logo").css("margin-top", bgHeight / 2.5);
+            $(".section-slider .time-addr").css("margin-top", 20);
+            $(".section-slider .time-addr").css("margin-left", 350);
         } else {
+            $(".section-slider .logo").css("margin-top", bgHeight / 2.5);
         	$(".section-slider .time-addr").css("margin-top", bgHeight / 1.5);
+            $(".section-slider .time-addr").css("margin-left", 150);
         }
     }
 
@@ -28,7 +36,7 @@ $(function() {
     $(window).scroll(function() {
         var top = $(document).scrollTop();
         console.log(top)
-        if (top >= 200) {
+        if (top >= 200 && $(window).width()>380) {
             $(".section-header").css("display", "block");
         } else {
             $(".section-header").css("display", "none");
